@@ -1,0 +1,223 @@
+{
+  "name": "rsi-free",
+  "displayName": "rsi-free",
+  "description": "Simple shortcuts/keymaps that will hopefully keep us RSI (Repetitive Strain Injury)  free",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Enkel-Digital/rsi-free.git"
+  },
+  "author": "JJ",
+  "publisher": "EnkelDigital",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Enkel-Digital/rsi-free/issues"
+  },
+  "icon": "images/icon.png",
+  "galleryBanner": {
+    "theme": "light",
+    "color": "#ffa600"
+  },
+  "keywords": [
+    "shortcuts",
+    "rsi free",
+    "escape",
+    "keybindings",
+    "key mappings"
+  ],
+  "engines": {
+    "vscode": "^1.45.0"
+  },
+  "categories": [
+    "Keymaps"
+  ],
+  "contributes": {
+    "keybindings": [
+      {
+        "key": "alt+e",
+        "command": "closeReferenceSearch",
+        "when": "inReferenceSearchEditor && !config.editor.stablePeek"
+      },
+      {
+        "key": "alt+e",
+        "command": "cancelSelection",
+        "when": "editorHasSelection && textInputFocus"
+      },
+      {
+        "key": "alt+e",
+        "command": "removeSecondaryCursors",
+        "when": "editorHasMultipleSelections && textInputFocus"
+      },
+      {
+        "key": "alt+e",
+        "command": "notebook.cell.quitEdit",
+        "when": "inputFocus && notebookEditorFocused"
+      },
+      {
+        "key": "alt+e",
+        "command": "closeBreakpointWidget",
+        "when": "breakpointWidgetVisible && textInputFocus"
+      },
+      {
+        "key": "alt+e",
+        "command": "editor.action.webvieweditor.hideFind",
+        "when": "webviewFindWidgetVisible && !editorFocus && activeEditor == 'WebviewEditor'"
+      },
+      {
+        "key": "alt+e",
+        "command": "editor.cancelOperation",
+        "when": "cancellableOperation"
+      },
+      {
+        "key": "alt+e",
+        "command": "settings.action.clearSearchResults",
+        "when": "inSettingsSearch"
+      },
+      {
+        "key": "alt+e",
+        "command": "workbench.action.hideComment",
+        "when": "commentEditorFocused"
+      },
+      {
+        "key": "alt+e",
+        "command": "closeFindWidget",
+        "when": "editorFocus && findWidgetVisible"
+      },
+      {
+        "key": "alt+e",
+        "command": "leaveEditorMessage",
+        "when": "messageVisible"
+      },
+      {
+        "key": "alt+e",
+        "command": "leaveSnippet",
+        "when": "editorTextFocus && inSnippetMode"
+      },
+      {
+        "key": "alt+e",
+        "command": "closeDirtyDiff",
+        "when": "dirtyDiffVisible"
+      },
+      {
+        "key": "alt+e",
+        "command": "closeMarkersNavigation",
+        "when": "editorFocus && markersNavigationVisible"
+      },
+      {
+        "key": "alt+e",
+        "command": "closeParameterHints",
+        "when": "editorFocus && parameterHintsVisible"
+      },
+      {
+        "key": "alt+e",
+        "command": "hideSuggestWidget",
+        "when": "suggestWidgetVisible && textInputFocus"
+      },
+      {
+        "key": "alt+e",
+        "command": "cancelOnTypeRenameInput",
+        "when": "editorTextFocus && onTypeRenameInputVisible"
+      },
+      {
+        "key": "alt+e",
+        "command": "cancelRenameInput",
+        "when": "editorFocus && renameInputVisible"
+      },
+      {
+        "key": "alt+e",
+        "command": "closeAccessibilityHelp",
+        "when": "accessibilityHelpWidgetVisible && editorFocus"
+      },
+      {
+        "key": "alt+e",
+        "command": "closeReplaceInFilesWidget",
+        "when": "replaceInputBoxFocus && searchViewletVisible"
+      },
+      {
+        "key": "alt+e",
+        "command": "keybindings.editor.clearSearchResults",
+        "when": "inKeybindings && inKeybindingsSearch"
+      },
+      {
+        "key": "alt+e",
+        "command": "list.clear",
+        "when": "listFocus && listHasSelectionOrFocus && !inputFocus"
+      },
+      {
+        "key": "alt+e",
+        "command": "notebook.hideFind",
+        "when": "notebookEditorFocused && notebookFindWidgetFocused"
+      },
+      {
+        "key": "alt+e",
+        "command": "search.action.cancel",
+        "when": "listFocus && searchViewletVisible && !inputFocus"
+      },
+      {
+        "key": "alt+e",
+        "command": "search.action.focusQueryEditorWidget",
+        "when": "inSearchEditor"
+      },
+      {
+        "key": "alt+e",
+        "command": "workbench.action.closeQuickOpen",
+        "when": "inQuickOpen"
+      },
+      {
+        "key": "alt+e",
+        "command": "workbench.action.hideInterfaceOverview",
+        "when": "interfaceOverviewVisible"
+      },
+      {
+        "key": "alt+e",
+        "command": "workbench.action.terminal.clearSelection",
+        "when": "terminalFocus && terminalTextSelected && !terminalFindVisible"
+      },
+      {
+        "key": "alt+e",
+        "command": "workbench.action.terminal.hideFind",
+        "when": "terminalFindVisible && terminalFocus"
+      },
+      {
+        "key": "alt+e",
+        "command": "workbench.action.terminal.navigationModeExit",
+        "when": "accessibilityModeEnabled && terminalA11yTreeFocus"
+      },
+      {
+        "key": "alt+e",
+        "command": "breadcrumbs.selectEditor",
+        "when": "breadcrumbsActive && breadcrumbsVisible"
+      },
+      {
+        "key": "alt+e",
+        "command": "editor.closeCallHierarchy",
+        "when": "callHierarchyVisible && !config.editor.stablePeek"
+      },
+      {
+        "key": "alt+e",
+        "command": "filesExplorer.cancelCut",
+        "when": "explorerResourceCut && explorerViewletVisible && filesExplorerFocus && !inputFocus"
+      },
+      {
+        "key": "alt+e",
+        "command": "closeReferenceSearch",
+        "when": "referenceSearchVisible && !config.editor.stablePeek"
+      },
+      {
+        "key": "alt+e",
+        "command": "notifications.hideList",
+        "when": "notificationCenterVisible"
+      },
+      {
+        "key": "alt+e",
+        "command": "notifications.hideToasts",
+        "when": "notificationToastsVisible"
+      },
+      {
+        "key": "alt+e",
+        "command": "gitlens.key.escape",
+        "when": "editorTextFocus && gitlens:key:escape && !findWidgetVisible && !isInEmbeddedEditor && !renameInputVisible && !suggestWidgetVisible"
+      }
+    ]
+  }
+}
